@@ -3,8 +3,7 @@ import type { ButtonSize } from '@button/types/ButtonSize'
 import ButtonTemplate from '@button/ButtonTemplate.vue'
 import type { ButtonType } from '@button/types/ButtonType'
 import type { Color } from '@/types/Color'
-import { computed } from 'vue'
-import { variants } from 'classname-variants'
+import { tv } from 'tailwind-variants'
 
 interface Props {
   color?: Color
@@ -20,16 +19,14 @@ const { color, type, size, disabled } = withDefaults(defineProps<Props>(), {
   disabled: false,
 })
 
-const colorVariants = computed(() =>
-  variants({
-    base: 'hover:opacity-80',
-    variants: {
-      color: {
-        primary: 'bg-primary text-primary-50',
-      },
+const colorVariants = tv({
+  base: 'hover:opacity-80',
+  variants: {
+    color: {
+      primary: 'bg-primary text-primary-50',
     },
-  })
-)
+  },
+})
 </script>
 
 <template>

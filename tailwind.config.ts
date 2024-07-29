@@ -1,11 +1,10 @@
+import { withTV } from 'tailwind-variants/dist/transformer.js'
+
 /** @type {import('tailwindcss').Config} */
-export default {
+export default withTV({
   content: ['index.html', './src/**/*.{vue,js,ts}', './.storybook/*.{js,ts}'],
   theme: {
     extend: {
-      boxShadow: {
-        border: '0px 0px 0px 2px black inset'
-      },
       colors: {
         primary: {
           '50': '#f2f7fb',
@@ -18,7 +17,7 @@ export default {
           DEFAULT: '#6374ae',
           '800': '#4a5989',
           '900': '#414e6e',
-          '950': '#262c40'
+          '950': '#262c40',
         },
         neutral: {
           '50': '#f8f8f8',
@@ -31,16 +30,16 @@ export default {
           '700': '#525252',
           '800': '#464646',
           '900': '#3d3d3d',
-          '950': '#292929'
+          '950': '#292929',
         },
         black: {
-          DEFAULT: '#000000'
+          DEFAULT: '#000000',
         },
         white: {
-          DEFAULT: '#ffffff'
-        }
-      }
-    }
+          DEFAULT: '#ffffff',
+        },
+      },
+    },
   },
-  plugins: []
-}
+  plugins: [],
+})
