@@ -19,6 +19,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "tailwind-variants": "^0.2.1",
     "vue": "^3.4.29"
   },
   "devDependencies": {
@@ -38,7 +39,6 @@
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
     "autoprefixer": "^10.4.19",
-    "classname-variants": "^1.5.0",
     "eslint": "^8.57.0",
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.23.0",
