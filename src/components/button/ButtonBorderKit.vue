@@ -1,21 +1,18 @@
 <script setup lang="ts">
-import type { ButtonSize } from '@button/types/ButtonSize'
-import ButtonTemplate from '@/components/button/ButtonTemplate.vue'
-import type { ButtonType } from '@button/types/ButtonType'
+import ButtonTemplate from '@button/ButtonTemplate.vue'
+import type { ButtonProps } from '@button/types/ButtonProps'
 import type { Color } from '@/types/Color'
 import { tv } from 'tailwind-variants'
 
-interface Props {
+interface Props extends ButtonProps {
   color?: Color
-  type?: ButtonType
-  size?: ButtonSize
-  disabled?: boolean
 }
 
-const { color, type, size, disabled } = withDefaults(defineProps<Props>(), {
+const { color, type, size, shape, disabled } = withDefaults(defineProps<Props>(), {
   color: 'primary',
   type: 'button',
   size: 'large',
+  shape: 'normal',
   disabled: false,
 })
 
@@ -30,7 +27,7 @@ const borderColorVariants = tv({
 </script>
 
 <template>
-  <ButtonTemplate :type :disabled :size :class="borderColorVariants({ color })">
+  <ButtonTemplate :type :size :shape :disabled :class="borderColorVariants({ color })">
     <slot></slot>
   </ButtonTemplate>
 </template>

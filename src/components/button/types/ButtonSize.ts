@@ -1,1 +1,1 @@
-export type ButtonSize = 'icon' | 'small' | 'large'
+export type ButtonSize = 'small' | 'large'
