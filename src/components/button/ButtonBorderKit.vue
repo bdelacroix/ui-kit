@@ -17,10 +17,10 @@ const { color, type, size, shape, disabled } = withDefaults(defineProps<Props>()
 })
 
 const borderColorVariants = tv({
-  base: '',
   variants: {
     color: {
-      primary: 'text-primary-800 shadow-[0_0_0_2px_inset] shadow-primary-100 hover:bg-primary-100',
+      primary:
+        'text-primary-800 shadow-[0_0_0_2px_inset] shadow-primary-600 hover:bg-primary-100 active:bg-primary-200 active:shadow-primary-200',
     },
   },
 })

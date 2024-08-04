@@ -17,10 +17,9 @@ const { color, type, size, shape, disabled } = withDefaults(defineProps<Props>()
 })
 
 const colorVariants = tv({
-  base: 'hover:opacity-80',
   variants: {
     color: {
-      primary: 'bg-primary text-primary-50',
+      primary: 'text-primary-50 bg-primary hover:bg-primary-600 active:bg-primary-800',
     },
   },
 })

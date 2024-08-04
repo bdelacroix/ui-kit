@@ -19,7 +19,7 @@ const { color, type, size, shape, disabled } = withDefaults(defineProps<Props>()
 const outlineColorVariants = tv({
   variants: {
     color: {
-      primary: 'bg-primary-100 hover:bg-primary-200 text-primary-800',
+      primary: 'bg-primary-100 hover:bg-primary-200 active:opacity-90 text-primary-800',
     },
   },
 })

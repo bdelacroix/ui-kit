@@ -18,7 +18,7 @@ const { type, size, shape, disabled } = withDefaults(defineProps<Props>(), {
 })
 
 const buttonVariants = tv({
-  base: 'truncate rounded-lg text-md font-semibold tracking-wider active:opacity-90',
+  base: 'truncate rounded-lg text-md font-semibold tracking-wider',
   variants: {
     size: {
       small: 'text-sm h-8',
