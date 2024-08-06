@@ -2,6 +2,7 @@
 import type { ButtonShape } from '@/components/button/types/ButtonShape'
 import type { ButtonSize } from '@button/types/ButtonSize'
 import type { ButtonType } from '@button/types/ButtonType'
+import { toRefs } from 'vue'
 import { tv } from 'tailwind-variants'
 
 interface Props {
@@ -11,14 +12,15 @@ interface Props {
   disabled?: boolean
 }
 
-const { type, size, shape, disabled } = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   type: 'button',
   size: 'large',
   shape: 'normal',
 })
+const { type, size, shape, disabled } = toRefs(props)
 
 const buttonVariants = tv({
-  base: 'truncate rounded-lg text-md font-semibold tracking-wider',
+  base: 'rounded-lg tracking-wider truncate',
   variants: {
     size: {
       small: 'text-sm h-8',

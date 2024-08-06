@@ -1,4 +1,5 @@
 import { withTV } from 'tailwind-variants/dist/transformer.js'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 /** @type {import('tailwindcss').Config} */
 export default withTV({
@@ -20,24 +21,24 @@ export default withTV({
           '950': '#262c40',
         },
         neutral: {
-          '50': '#f8f8f8',
-          '100': '#f3f3f3',
-          '200': '#dcdcdc',
-          '300': '#bdbdbd',
-          '400': '#989898',
-          '500': '#7c7c7c',
-          '600': '#656565',
-          '700': '#525252',
-          '800': '#464646',
-          '900': '#3d3d3d',
-          '950': '#292929',
-        },
-        black: {
-          DEFAULT: '#000000',
+          '50': '#F9FAFB',
+          '100': '#F6F4F8',
+          '200': '#ECE9F1',
+          '300': '#DED9E4',
+          '400': '#D0C9D6',
+          '500': '#ACA4B6',
+          '600': '#887E96',
+          '700': '#645976',
+          '800': '#3F3356',
+          '900': '#2D1C3A',
+          '950': '#1A051D',
         },
         white: {
-          DEFAULT: '#ffffff',
+          DEFAULT: '#FFFFFF',
         },
+      },
+      fontFamily: {
+        sans: ['Lexend', ...defaultTheme.fontFamily.sans]
       },
     },
   },

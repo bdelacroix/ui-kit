@@ -1,6 +1,6 @@
 {
   "name": "ui-kit",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "author": {
@@ -19,6 +19,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.1.5",
+    "@vueuse/core": "^10.11.0",
     "tailwind-variants": "^0.2.1",
     "vue": "^3.4.29"
   },

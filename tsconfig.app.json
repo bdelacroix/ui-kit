@@ -8,7 +8,12 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@button/*": ["./src/components/button/*"]
+      "@button": ["./src/components/button"],
+      "@button/*": ["./src/components/button/*"],
+      "@card": ["./src/components/card"],
+      "@card/*": ["./src/components/card/*"],
+      "@select": ["./src/components/select"],
+      "@select/*": ["./src/components/select/*"],
     },
     "strict": true
   }
