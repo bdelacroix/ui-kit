@@ -10,6 +10,8 @@
       "@/*": ["./src/*"],
       "@button": ["./src/components/button"],
       "@button/*": ["./src/components/button/*"],
+      "@calendar": ["./src/components/calendar"],
+      "@calendar/*": ["./src/components/calendar/*"],
       "@card": ["./src/components/card"],
       "@card/*": ["./src/components/card/*"],
       "@select": ["./src/components/select"],
