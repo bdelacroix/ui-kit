@@ -1,3 +1,3 @@
-import InputTextKit from '@input/InputTextKit.vue'
+import TextInputKit from '@input/TextInputKit.vue'
 
-export { InputTextKit }
+export { TextInputKit }
