@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import ButtonBorderKit from '@/components/button/ButtonBorderKit.vue'
+import ButtonBorderKit from '@button/ButtonBorderKit.vue'
 
 const meta: Meta<typeof ButtonBorderKit> = {
   title: 'Buttons/With border',

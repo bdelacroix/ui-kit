@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import ButtonOutlineKit from '@/components/button/ButtonOutlineKit.vue'
+import ButtonOutlineKit from '@button/ButtonOutlineKit.vue'
 
 const meta: Meta<typeof ButtonOutlineKit> = {
   title: 'Buttons/Outline',

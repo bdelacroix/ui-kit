@@ -12,6 +12,7 @@ export default defineConfig({
       '@button': fileURLToPath(new URL('./src/components/button', import.meta.url)),
       '@calendar': fileURLToPath(new URL('./src/components/calendar', import.meta.url)),
       '@card': fileURLToPath(new URL('./src/components/card', import.meta.url)),
+      '@input': fileURLToPath(new URL('./src/components/input', import.meta.url)),
       '@select': fileURLToPath(new URL('./src/components/select', import.meta.url)),
     },
   },

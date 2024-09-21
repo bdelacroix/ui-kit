@@ -22,12 +22,8 @@ import CalendarButton from '@calendar/CalendarButton.vue'
 const daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 const today = ref<Date>(startOfToday())
 const modelValue = defineModel<Date | null>({ default: null })
-const currentMonth = ref<string>(
-  format(modelValue.value || today.value, 'MMMM yyyy')
-)
-const firstDayOfMonth = computed<Date>(() =>
-  parse(currentMonth.value, 'MMMM yyyy', new Date())
-)
+const currentMonth = ref<string>(format(modelValue.value || today.value, 'MMMM yyyy'))
+const firstDayOfMonth = computed<Date>(() => parse(currentMonth.value, 'MMMM yyyy', new Date()))
 const lastDayOfMonth = computed<Date>(() => endOfMonth(firstDayOfMonth.value))
 const daysInMonth = computed<Date[]>(() =>
   eachDayOfInterval({

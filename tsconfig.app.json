@@ -14,6 +14,8 @@
       "@calendar/*": ["./src/components/calendar/*"],
       "@card": ["./src/components/card"],
       "@card/*": ["./src/components/card/*"],
+      "@input": ["./src/components/input"],
+      "@input/*": ["./src/components/input/*"],
       "@select": ["./src/components/select"],
       "@select/*": ["./src/components/select/*"],
     },
