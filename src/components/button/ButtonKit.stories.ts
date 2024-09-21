@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import ButtonKit from '@/components/button/ButtonKit.vue'
+import ButtonKit from '@button/ButtonKit.vue'
 
 const meta: Meta<typeof ButtonKit> = {
   title: 'Buttons/Default',

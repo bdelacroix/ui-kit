@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ButtonShape } from '@/components/button/types/ButtonShape'
+import type { ButtonShape } from '@button/types/ButtonShape'
 import type { ButtonSize } from '@button/types/ButtonSize'
 import type { ButtonType } from '@button/types/ButtonType'
 import { toRefs } from 'vue'
