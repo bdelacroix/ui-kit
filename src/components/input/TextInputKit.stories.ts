@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import InputTextKit from '@input/InputTextKit.vue'
+import TextInputKit from '@input/TextInputKit.vue'
 
-const meta: Meta<typeof InputTextKit> = {
-  title: 'Input/Input text',
-  component: InputTextKit as Record<keyof typeof InputTextKit, unknown>,
+const meta: Meta<typeof TextInputKit> = {
+  title: 'Input/Text',
+  component: TextInputKit as Record<keyof typeof TextInputKit, unknown>,
   tags: ['autodocs'],
   args: {
     modelValue: '',
     placeholder: 'Placeholder',
   },
-} satisfies Meta<typeof InputTextKit>
+} satisfies Meta<typeof TextInputKit>
 
 export default meta
 type Story = StoryObj<typeof meta>
