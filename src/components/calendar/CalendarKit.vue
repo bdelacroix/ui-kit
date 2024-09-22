@@ -21,8 +21,8 @@ import CalendarButton from '@calendar/CalendarButton.vue'
 
 const daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 const today = ref<Date>(startOfToday())
-const modelValue = defineModel<Date | null>({ default: null })
-const currentMonth = ref<string>(format(modelValue.value || today.value, 'MMMM yyyy'))
+const model = defineModel<Date | null>({ default: null })
+const currentMonth = ref<string>(format(model.value || today.value, 'MMMM yyyy'))
 const firstDayOfMonth = computed<Date>(() => parse(currentMonth.value, 'MMMM yyyy', new Date()))
 const lastDayOfMonth = computed<Date>(() => endOfMonth(firstDayOfMonth.value))
 const daysInMonth = computed<Date[]>(() =>
@@ -53,7 +53,7 @@ const colStartClasses = [
 ]
 </script>
 <template>
-  <CardKit class="w-fit flex flex-col gap-4 p-4">
+  <CardKit class="w-fit flex flex-col gap-4 p-4 overflow">
     <div class="flex items-center justify-between">
       <ButtonOutlineKit
         shape="icon"
@@ -79,11 +79,11 @@ const colStartClasses = [
     <div class="grid grid-cols-7 gap-2 place-items-center">
       <CalendarButton
         v-for="(day, key) in daysInMonth"
-        @click="modelValue = day"
+        @click="model = day"
         :key
         :today="isToday(day)"
         :same-month="isSameMonth(day, firstDayOfMonth)"
-        :active="modelValue ? isSameDay(day, modelValue) : false"
+        :active="model ? isSameDay(day, model) : false"
         :class="colStartClasses[getDay(day)]"
       >
         {{ format(day, 'd') }}

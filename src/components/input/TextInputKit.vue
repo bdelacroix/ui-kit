@@ -1,14 +1,10 @@
 <script setup lang="ts">
+import type { InputProps } from '@input/types/InputProps'
 import InputTemplate from '@input/InputTemplate.vue'
 import { toRefs } from 'vue'
 
-interface Props {
-  placeholder?: string
-  disabled?: boolean
-}
-
-const props = defineProps<Props>()
-const { placeholder } = toRefs(props)
+const props = defineProps<InputProps>()
+const { id, name, disabled, placeholder } = toRefs(props)
 
 const model = defineModel<string>()
 </script>
@@ -16,7 +12,7 @@ const model = defineModel<string>()
 <template>
   <InputTemplate :disabled>
     <template #default="{ inputClass }">
-      <input type="text" v-model="model" :placeholder :disabled :class="inputClass" />
+      <input type="text" v-model="model" :id :name :disabled :placeholder :class="inputClass" />
     </template>
   </InputTemplate>
 </template>

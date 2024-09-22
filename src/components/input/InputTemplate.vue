@@ -19,7 +19,7 @@ const slots = defineSlots<InputSlots>()
 
 const inputVariants = computed(() =>
   tv({
-    base: 'rounded-lg bg-white shadow-md shadow-primary-50 flex items-center gap-4 w-full font-light text-neutral-400 p-4',
+    base: 'rounded-lg bg-white shadow-md shadow-neutral-100 flex items-center gap-4 w-full font-light text-neutral-400 p-4',
     variants: {
       disabled: {
         true: 'opacity-75',
