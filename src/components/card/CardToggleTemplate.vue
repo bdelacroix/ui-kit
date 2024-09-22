@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import TransitionKit from '@/components/transition/TransitionKit.vue'
+import { TransitionName } from '@/components/transition/types/TransitionName.enum'
 import { onClickOutside } from '@vueuse/core'
 import { tv } from 'tailwind-variants'
 import { computed, toRefs, useTemplateRef } from 'vue'
@@ -39,8 +41,10 @@ onClickOutside(toggler, () => emits('close'))
 <template>
   <div class="relative flex flex-col gap-2" ref="toggler">
     <slot name="toggler"></slot>
-    <div v-if="open" :class="toggleVariants({ alignment })">
-      <slot name="toggled"></slot>
-    </div>
+    <TransitionKit :name="TransitionName.SLIDE_FADE_VERTICAL">
+      <div v-if="open" :class="toggleVariants({ alignment })">
+        <slot name="toggled"></slot>
+      </div>
+    </TransitionKit>
   </div>
 </template>

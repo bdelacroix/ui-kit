@@ -6,6 +6,7 @@ import InputTemplate from '@input/InputTemplate.vue'
 import CalendarKit from '@calendar/CalendarKit.vue'
 import CardToggleTemplate from '@card/CardToggleTemplate.vue'
 import { format } from 'date-fns'
+import TransitionKit from '@transition/TransitionKit.vue'
 
 const props = withDefaults(defineProps<InputProps>(), { placeholder: 'jj/mm/yyyy' })
 const { id, name, disabled, placeholder } = toRefs(props)
@@ -59,11 +60,13 @@ function toggleCalendar(): void {
           />
         </template>
         <template #rightIcon="{ iconClass }">
-          <XCircleIcon
-            v-show="null !== model"
-            @click.stop.prevent="model = null"
-            class="self-center size-4 cursor-pointer me-4"
-          />
+          <TransitionKit>
+            <XCircleIcon
+              v-show="null !== model"
+              @click.stop.prevent="model = null"
+              class="self-center size-4 cursor-pointer me-4"
+            />
+          </TransitionKit>
           <CalendarDaysIcon :class="iconClass" />
         </template>
       </InputTemplate>
