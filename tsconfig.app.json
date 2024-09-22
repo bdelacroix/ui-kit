@@ -18,6 +18,8 @@
       "@input/*": ["./src/components/input/*"],
       "@select": ["./src/components/select"],
       "@select/*": ["./src/components/select/*"],
+      "@transition": ["./src/components/transition"],
+      "@transition/*": ["./src/components/transition/*"]
     },
     "strict": true
   }

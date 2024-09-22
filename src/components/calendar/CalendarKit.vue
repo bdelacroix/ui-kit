@@ -53,7 +53,7 @@ const colStartClasses = [
 ]
 </script>
 <template>
-  <CardKit class="w-fit flex flex-col gap-4 p-4 overflow">
+  <CardKit class="w-fit flex flex-col gap-4 p-4">
     <div class="flex items-center justify-between">
       <ButtonOutlineKit
         shape="icon"
