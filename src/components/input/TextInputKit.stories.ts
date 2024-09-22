@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import TextInputKit from '@input/TextInputKit.vue'
 
 const meta: Meta<typeof TextInputKit> = {
-  title: 'Input/Text',
+  title: 'Inputs/Text',
   component: TextInputKit as Record<keyof typeof TextInputKit, unknown>,
   tags: ['autodocs'],
   args: {
