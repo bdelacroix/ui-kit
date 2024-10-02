@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TransitionKit from '@/components/transition/TransitionKit.vue'
+import TransitionKit from '@transition/TransitionKit.vue'
 import { TransitionName } from '@/components/transition/types/TransitionName.enum'
 import { onClickOutside } from '@vueuse/core'
 import { tv } from 'tailwind-variants'
