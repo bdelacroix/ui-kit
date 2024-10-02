@@ -1,9 +1,9 @@
 <script setup lang="ts" generic="T">
 import { computed, ref, toRefs } from 'vue'
 import SelectItem from '@select/SelectItem.vue'
+import type { SelectOption } from '@select/types/SelectOption'
 import type { SelectProps } from '@select/types/SelectProps'
 import SelectTemplate from '@select/SelectTemplate.vue'
-import type { SelectOption } from '@select/types/SelectOption'
 
 const props = withDefaults(defineProps<SelectProps<T>>(), {
   size: 'large',
