@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import TextInputKit from '@input/TextInputKit.vue'
+import TextInputKit from '@input/text/TextInputKit.vue'
 
 const meta: Meta<typeof TextInputKit> = {
   title: 'Inputs/Text',

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import DateInputKit from '@input/DateInputKit.vue'
+import DateInputKit from '@input/date/DateInputKit.vue'
 
 const meta: Meta<typeof DateInputKit> = {
   title: 'Inputs/Date',
