@@ -1,10 +1,26 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
+  build: {
+    lib: {
+      entry: resolve(__dirname, 'index.ts'),
+      name: 'ui-kit',
+      fileName: 'index'
+    },
+    rollupOptions: {
+      external: ['vue', 'date-fns'],
+      output: {
+        globals: {
+          vue: 'Vue',
+          'date-fns': 'DateFns',
+        },
+      },
+    },
+  },
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {

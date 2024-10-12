@@ -1,12 +1,8 @@
 {
-  "name": "ui-kit",
-  "version": "0.4.0",
-  "private": true,
+  "name": "@lavendr/ui-kit",
+  "version": "0.5.0",
   "type": "module",
-  "author": {
-    "name": "Bastien Delacroix",
-    "url": "https://github.com/bdelacroix"
-  },
+  "author": "Bastien Delacroix (https://github.com/bdelacroix)",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -55,5 +51,23 @@
     "vite": "^5.3.1",
     "vite-plugin-vue-devtools": "^7.3.1",
     "vue-tsc": "^2.0.21"
-  }
+  },
+  "description": "UI-Kit is a personal design system project based on [Vue](https://vuejs.org) + [Vite](https://vitejs.dev).",
+  "main": "dist/ui-kit.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdelacroix/ui-kit.git"
+  },
+  "keywords": [
+    "UI Kit",
+    "Vue.js",
+    "Tailwind",
+    "CSS",
+    "Typescript"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdelacroix/ui-kit/issues"
+  },
+  "homepage": "https://github.com/bdelacroix/ui-kit#readme"
 }
