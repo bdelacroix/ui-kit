@@ -9,14 +9,12 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'index.ts'),
       name: 'ui-kit',
-      fileName: 'index'
     },
     rollupOptions: {
-      external: ['vue', 'date-fns'],
+      external: ['vue', 'autoprefixer', 'postcss', 'tailwindcss'],
       output: {
         globals: {
           vue: 'Vue',
-          'date-fns': 'DateFns',
         },
       },
     },

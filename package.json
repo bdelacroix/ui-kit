@@ -18,8 +18,7 @@
     "@heroicons/vue": "^2.1.5",
     "@vueuse/core": "^10.11.1",
     "date-fns": "^3.6.0",
-    "tailwind-variants": "^0.2.1",
-    "vue": "^3.5.8"
+    "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
@@ -37,33 +36,40 @@
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
-    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.6",
     "eslint": "^8.57.0",
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.23.0",
     "npm-run-all2": "^6.2.0",
-    "postcss": "^8.4.39",
     "prettier": "^3.2.5",
     "storybook": "^8.2.6",
     "storybook-addon-vue-slots": "0.9.30-next.2",
-    "tailwindcss": "^3.4.6",
     "typescript": "~5.4.0",
     "vite": "^5.3.1",
     "vite-plugin-vue-devtools": "^7.3.1",
     "vue-tsc": "^2.0.21"
   },
+  "peerDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vue": "^3.5.8"
+  },
   "description": "UI-Kit is a personal design system project based on [Vue](https://vuejs.org) + [Vite](https://vitejs.dev).",
   "main": "dist/ui-kit.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bdelacroix/ui-kit.git"
   },
   "keywords": [
-    "UI Kit",
-    "Vue.js",
-    "Tailwind",
-    "CSS",
-    "Typescript"
+    "ui-kit",
+    "vue",
+    "tailwind",
+    "typescript"
   ],
   "license": "ISC",
   "bugs": {
