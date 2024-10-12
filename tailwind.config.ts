@@ -1,9 +1,12 @@
 import { withTV } from 'tailwind-variants/dist/transformer.js'
-import defaultTheme from 'tailwindcss/defaultTheme'
 
 /** @type {import('tailwindcss').Config} */
 export default withTV({
-  content: ['index.html', './src/**/*.{vue,js,ts}', './.storybook/*.{js,ts}'],
+  content: [
+    './src/**/*.{vue,js,ts}',
+    './.storybook/*.{js,ts}',
+    './node_modules/@lavendr/ui-kit/**/*.js',
+  ],
   theme: {
     extend: {
       colors: {
@@ -36,10 +39,7 @@ export default withTV({
         white: {
           DEFAULT: '#FFFFFF',
         },
-      },
-      fontFamily: {
-        sans: ['Lexend', ...defaultTheme.fontFamily.sans]
-      },
+      }
     },
   },
   plugins: [],
